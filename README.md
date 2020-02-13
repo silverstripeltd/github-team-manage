@@ -5,7 +5,8 @@ Little helper to bulk manage team assignments to repos.
 ## Installation
 
 ```
-git clone 
+git clone git@github.com:silverstripeltd/github-team-manage.git
+cd github-team-manage
 npm link
 ```
 
