@@ -40,13 +40,14 @@ async function listRepos({org, exclude}) {
     })
     .forEach(repo => {
       // Output names to stdout (for easy piping)
-      console.log(repo.name);
+      console.log(repo.full_name);
     });
 };
 
 async function addRepos({org, team, permission, repos}) {
   const api = getApi();
   for (const repo of repos) {
+    console.log(`Updating ${repo}`);
     await api.request("PUT /orgs/:org/teams/:team/repos/:repo", {
       org,
       team,
