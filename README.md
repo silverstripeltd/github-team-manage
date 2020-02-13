@@ -27,5 +27,5 @@ and then bulk-add those to a team. This requires chained commands with `xargs`.
 
 ```
 github-team-manage list-repos my-org \
-  |  xargs github-team-manage add-repos my-org my-team triage --repos
+  |  xargs github-team-manage add-repos my-org my-team my-permission --repos
 ```

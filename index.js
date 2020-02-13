@@ -92,7 +92,8 @@ yargs
       })
       yargs.positional('permission', {
         type: 'string',
-        describe: 'Permission (pull, push, triage, maintain, admin)'
+        describe: 'Permission (pull, push, triage, maintain, admin)',
+        choices: ['pull', 'push', 'triage', 'maintain', 'admin']
       })
       // Meh. https://github.com/yargs/yargs/issues/388
       yargs.option('repos', {
