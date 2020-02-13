@@ -38,6 +38,8 @@ async function listRepos({org, exclude}) {
         .filter(topic => exclude.includes(topic));
       return foundExcluded.length == 0;
     })
+    // Forks have different permission levels (no "triage")
+    .filter(repo => !repo.fork)
     .forEach(repo => {
       // Output names to stdout (for easy piping)
       console.log(repo.full_name);
