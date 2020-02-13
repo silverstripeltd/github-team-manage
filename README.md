@@ -20,6 +20,17 @@ Use `.env` or process env vars to configure.
 
 ```
 github-team-manage --help
+
+github-team-manage <cmd> [args]
+
+Commands:
+  github-team-manage list-repos [org]       List all repos in an organisation
+  github-team-manage add-repos [org]        Add multiple repos to a team. Reads
+  [team] [permission]                       repos from stdin
+
+Options:
+  --help     Show help                                                 [boolean]
+  --version  Show version number                                       [boolean]
 ```
 
 The most common usage is to list some repos in an org,
