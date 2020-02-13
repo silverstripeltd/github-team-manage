@@ -1,0 +1,21 @@
+{
+  "name": "github-team-manage",
+  "version": "0.1.0",
+  "description": "Bulk manage team repo assignments in Github",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "github-team-manage": "./index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/core": "^2.4.0",
+    "@octokit/plugin-paginate-rest": "^2.0.1",
+    "@octokit/rest": "^16.43.1",
+    "dotenv": "^8.2.0",
+    "yargs": "^15.1.0"
+  }
+}
