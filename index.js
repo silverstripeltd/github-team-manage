@@ -70,6 +70,7 @@ yargs
       })
       yargs.option('exclude', {
         type: 'array',
+        default: [],
         describe: 'Exclude certain repo topics'
       })
     },
